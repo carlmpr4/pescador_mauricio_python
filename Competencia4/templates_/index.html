@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+{% block header_title %}
+<head>
+<title>Mauricio's CV</title>
+
+{% endblock %}
+
+
+{% block content %}
+<style>
+    body {
+font-family: Arial, sans-serif;
+margin: 20px;
+background-color: #f2f2f2;
+}
+
+h1 {
+text-align: center;
+color: #333;
+}
+
+.container {
+max-width: 500px;
+margin: 0 auto;
+background-color: #fff;
+border: 1px solid #ccc;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.parameter {
+margin-bottom: 10px;
+}
+
+label {
+font-weight: bold;
+color: #333;
+}
+
+span {
+    font-size: small;
+margin-left: 10px;
+color: #555;
+}
+</style>
+</head>
+
+<body>
+    <h1>Mauricio Pescador's Resume</h1>
+    <h2>Datos Personales:</h2> 
+    <label> Nombres: </label> <span> {{ nombre }}  </span>
+    <br><label> Apellidos: </label> <span> {{ primer_apellido }}  {{ segundo_apellido }}  </span>
+    <br><label> Fecha de Nacimiento: </label> <span> {{ fecha_nacimiento  }}  </span>
+    <br><label> Telefono: </label> <span> {{ celular  }}  </span>
+    <br><label> Correo: </label> <span> {{ correo }}  </span>
+    <br><label> Genero: </label> <span> {{ genero }}  </span>
+    <br><label> Objetivo: </label> <span> {{ objetivo }}  </span>
+    <br><label> Salario Esperado: </label> <span> {{ salario_esperado }}  </span>
+    <br><br>
+
+    <h2>Habilidades:</h2> 
+    <span>{{ habilidades }} </span>
+    <br><br><br><br>
+
+    <h2>Trabajos Anteriores:</h2> 
+    <h3>Trabajo 1:</h3>
+    <label> Empresa: </label> <span> {{ trabajo1_lugar  }}  </span>
+    <br><label> Fecha Inicio: </label> <span> {{ trabajo1_fecinicio  }}  </span>
+    <br><label> Fecha Terminacion: </label> <span> {{ trabajo1_fecfin  }}  </span>
+    <br><label> Puesto: </label> <span> {{ trabajo1_puesto  }}  </span>
+    <br><br>
+
+    <h3>Trabajo 2:</h3>
+    <label> Empresa: </label> <span> {{ trabajo2_lugar  }}  </span>
+    <br><label> Fecha Inicio: </label> <span> {{ trabajo2_fecinicio  }}  </span>
+    <br><label> Fecha Terminacion: </label> <span> {{ trabajo2_fecfin  }}  </span>
+    <br><label> Puesto: </label> <span> {{ trabajo2_puesto  }}  </span>
+
+</body>
+
+{% endblock %}
+
+
+</html>
